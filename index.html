@@ -81,6 +81,7 @@
 				$('.footerclass').css('background-color','#fff');
 				$('.footerclass').css('color','#000');
 				$('.light').css('border-top','1px solid #000');
+				document.getElementById('dark').innerHTML='Dark Mode';
 
 			}
 			else{
@@ -100,6 +101,7 @@
 				$('.footerclass').css('background-color','#000');
 				$('.footerclass').css('color','#fff');
 				$('.light').css('border-top','1px solid #d5d5d5');
+				document.getElementById('dark').innerHTML='Light Mode';
 
 			}
 		}
@@ -151,7 +153,7 @@
   					<span class="slider round"></span>
 				</label>
 			</div>
-
+			<p style="color: #fff;" class="p-1"><b id="dark">Light Mode</b></p>
 
 			<div class="col-12 ">
 				<div class="home_page_title text-left">

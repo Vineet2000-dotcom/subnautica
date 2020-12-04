@@ -82,6 +82,7 @@
 				$('.footerclass').css('background-color','#fff');
 				$('.footerclass').css('color','#000');
 				$('.light').css('border-top','1px solid #000');
+				document.getElementById('dark').innerHTML='Dark Mode';
 			}
 			else {
 				$('.aboutus_title_image').css('background','linear-gradient(rgba(22,181,242,0.1),rgba(0,0,0,0.8)), url(\'coral2.jpg\')');
@@ -100,6 +101,7 @@
 				$('.footerclass').css('background-color','#000');
 				$('.footerclass').css('color','#fff');
 				$('.light').css('border-top','1px solid #d5d5d5');
+				document.getElementById('dark').innerHTML='Light Mode';
 			}
 		}
 
@@ -144,11 +146,13 @@
 
 			<div class="dark_mode_section">
 				<label class="switch">
+
   					<input type="checkbox" id="dark_mode_id" onchange="dark_mode('dark_mode_id')">
   					<span class="slider round"></span>
+
 				</label>
 			</div>
-
+			<p style="color: #fff;" class="p-1"><b id="dark">Light Mode</b></p>
 			<div class="col-12 ">
 				<div class="aboutus_page_title text-left">
 					<p><span id="aboutus_title">About Us</span></p>

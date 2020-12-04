@@ -75,6 +75,7 @@
 				$('.footerclass').css('background-color','#fff');
 				$('.footerclass').css('color','#000');
 				$('.light').css('border-top','1px solid #000');
+				document.getElementById('dark').innerHTML='Dark Mode';
 			}
 			else{
 				$('.title_image').css('background','linear-gradient(rgba(22,181,242,0.2),rgba(0,0,0,0.5)), url(\'coral2.jpg\')');
@@ -85,6 +86,7 @@
 				$('.footerclass').css('background-color','#000');
 				$('.footerclass').css('color','#fff');
 				$('.light').css('border-top','1px solid #d5d5d5');
+				document.getElementById('dark').innerHTML='Light Mode';
 			}
 		}
 
@@ -352,7 +354,7 @@
   					<span class="slider round"></span>
 				</label>
 			</div>
-			
+			<p style="color: #fff;" class="p-1"><b id="dark">Light Mode</b></p>
 			<div class="col-12">
 				<div class="title_text text-left">
 					<p><span id="title1">A Quick Glance At Our Products</span></p>
