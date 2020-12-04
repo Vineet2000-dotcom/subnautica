@@ -62,6 +62,48 @@
 		  });
 		}
 
+		function dark_mode(toggleid){
+			var toggle=document.getElementById(toggleid);
+			if(toggle.checked) {
+				$('.home_title_image').css('background','linear-gradient(rgba(22,181,242,0.3),rgba(255,255,255,0.2)), url(\'coral2.jpg\')');
+				$('.home_page_title').css('color','#000');
+				$('.home_carousel_row_dark').css('background','#000');
+				$('.home_to_aboutus').css('background','#fff');
+				$('.home_to_abotus_title').css('background','#dc3545');
+				$('.home_to_abotus_title').css('color','#fff');
+				$('.home_to_abotus_text').css('color','#000');
+				$('.home_knowmore_box').css('border','10px solid #000');
+				$('.home_knowmore_text').css('color','#000');
+				$('.knowmre_btn').css('border-color','#dc3545');
+				$('.knowmre_btn').css('color','#dc3545');
+				$('.knowmre_btn:hover').css('background','#dc3545');
+				$('.knowmre_btn:hover').css('color','#fff');
+				$('.footerclass').css('background-color','#fff');
+				$('.footerclass').css('color','#000');
+				$('.light').css('border-top','1px solid #000');
+
+			}
+			else{
+				$('.home_title_image').css('background','linear-gradient(rgba(22,181,242,0.1),rgba(0,0,0,0.8)), url(\'coral2.jpg\')');
+				$('.home_page_title').css('color','#fff');
+				$('.home_carousel_row_dark').css('background','#fff');
+				$('.home_to_aboutus').css('background','#000');
+				$('.home_to_abotus_title').css('background','#ffc107');
+				$('.home_to_abotus_title').css('color','#000');
+				$('.home_to_abotus_text').css('color','#fff');
+				$('.home_knowmore_box').css('border','10px solid #fff');
+				$('.home_knowmore_text').css('color','#fff');
+				$('.knowmre_btn').css('border-color','#ffc107');
+				$('.knowmre_btn').css('color','#ffc107');
+				$('.knowmre_btn:hover').css('background','#ffc107');
+				$('.knowmre_btn:hover').css('color','#000');
+				$('.footerclass').css('background-color','#000');
+				$('.footerclass').css('color','#fff');
+				$('.light').css('border-top','1px solid #d5d5d5');
+
+			}
+		}
+
     </script>
 
 </head>
@@ -103,13 +145,21 @@
 			</script>
 			<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+			<div class="dark_mode_section">
+				<label class="switch">
+  					<input type="checkbox" id="dark_mode_id" onchange="dark_mode('dark_mode_id')">
+  					<span class="slider round"></span>
+				</label>
+			</div>
+
+
 			<div class="col-12 ">
 				<div class="home_page_title text-left">
 					<p><span id="home_title">Home</span></p>
 				</div>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row home_carousel_row_dark pb-2">
 			<div class="col-12 pt-2">
 				
 					<div id="slides" class="carousel slide home_carousel_details" data-ride="carousel">
@@ -164,7 +214,7 @@
 	           		</div>			
 			</div>
 		</div>
-		<div class="row jumbotron home_to_aboutus mt-2">
+		<div class="row jumbotron home_to_aboutus ">
 			<div class="col-md-8 col-12">
 				<p class="home_to_abotus_title display-2 p-3  text-center">About Us</p>
 				<p class="home_to_abotus_text">
@@ -179,7 +229,7 @@
 							<b class="home_knowmore_text "> To Know More</b>
 						</div>
 						<div class="col-12 p-4">
-							<a href="AboutUsPage.html"><button class="btn btn-outline-warning knowmre_btn btn-lg">Click Here</button></a>
+							<a href="AboutUsPage.html"><button class="btn knowmre_btn btn-lg">Click Here</button></a>
 						</div>
 					</div>
 				</div>
@@ -201,14 +251,14 @@
 	<footer class="footerclass h-auto">
 		<div class="container-fluid">
 			<div class="row text-center">
-				<div class="col-md-4">
+				<div class="col-md-4 col-12">
 					<hr class="light"/>
 					<h5>Contacts</h5>
 					<hr class="light"/>
 					<p>999-999-999</p>
 					<p>abc@xyz.com</p>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 col-12">
 					<hr class="light" />
 					<h5>Our Hours</h5>
 					<hr class="light" />
@@ -216,7 +266,7 @@
 					<p>Sunday:10-11</p>
 					<p>Tuesday:10-12</p>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 col-12">
 					<hr class="light" />
 					<h5>Services</h5>
 					<hr class="light" />
