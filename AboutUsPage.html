@@ -63,6 +63,46 @@
 		  });
 		}
 
+		function dark_mode(toggleid){
+			var toggle=document.getElementById(toggleid);
+			if(toggle.checked){
+				$('.aboutus_title_image').css('background','linear-gradient(rgba(22,181,242,0.3),rgba(255,255,255,0.2)), url(\'coral2.jpg\')');
+				$('.aboutus_page_title').css('color','#000');
+				$('.aboutus_info').css('background','#fff');
+				$('.abotus_title').css('background','#dc3545');
+				$('.abotus_title').css('color','#fff');
+				$('.abotus_text').css('color','#000');
+				$('.aboutus_img_col').css('border','10px solid #000');
+				$('.our_products').css('background','#fff');
+				$('.our_products_title').css('color','#dc3545');
+				$('.our_products_text').css('color','#000');
+				$('.leftoverlay').css('background-color','rgba(175, 238, 236,0.8)');
+				$('.rightoverlay').css('background-color','rgba(175, 238, 236,0.8)');
+				$('.overlayborder').css('border','4px solid #fff');
+				$('.footerclass').css('background-color','#fff');
+				$('.footerclass').css('color','#000');
+				$('.light').css('border-top','1px solid #000');
+			}
+			else {
+				$('.aboutus_title_image').css('background','linear-gradient(rgba(22,181,242,0.1),rgba(0,0,0,0.8)), url(\'coral2.jpg\')');
+				$('.aboutus_page_title').css('color','#fff');
+				$('.aboutus_info').css('background','#000');
+				$('.abotus_title').css('background','#ffc107');
+				$('.abotus_title').css('color','#000');
+				$('.abotus_text').css('color','#fff');
+				$('.aboutus_img_col').css('border','10px solid #fff');
+				$('.our_products').css('background','#000');
+				$('.our_products_title').css('color','#ffc107');
+				$('.our_products_text').css('color','#fff');
+				$('.leftoverlay').css('background-color','rgba(227,20,82,0.8)');
+				$('.rightoverlay').css('background-color','rgba(17227,20,82,0.8)');
+				$('.overlayborder').css('border','4px solid #000');
+				$('.footerclass').css('background-color','#000');
+				$('.footerclass').css('color','#fff');
+				$('.light').css('border-top','1px solid #d5d5d5');
+			}
+		}
+
     </script>
 </head>
 <body>
