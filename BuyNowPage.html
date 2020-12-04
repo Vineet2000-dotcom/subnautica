@@ -62,6 +62,32 @@
 		    });
 		  });
 		}
+
+
+		function dark_mode(toggleid){
+			var toggle=document.getElementById(toggleid);
+			if(toggle.checked){
+				$('.title_image').css('background','linear-gradient(rgba(22,181,242,0.3),rgba(255,255,255,0.2)), url(\'coral2.jpg\')');
+				$('.title_text').css('color','#000');
+				$('.category_row').css('background-color','#fff');
+				$('.category_title').css('color','#dc3545');
+				$('.category_class').css('color','#000');
+				$('.footerclass').css('background-color','#fff');
+				$('.footerclass').css('color','#000');
+				$('.light').css('border-top','1px solid #000');
+			}
+			else{
+				$('.title_image').css('background','linear-gradient(rgba(22,181,242,0.2),rgba(0,0,0,0.5)), url(\'coral2.jpg\')');
+				$('.title_text').css('color','#fff');
+				$('.category_row').css('background-color','#000');
+				$('.category_title').css('color','#FFA23D');
+				$('.category_class').css('color','#fff');
+				$('.footerclass').css('background-color','#000');
+				$('.footerclass').css('color','#fff');
+				$('.light').css('border-top','1px solid #d5d5d5');
+			}
+		}
+
     	
     	function checkbox_change(){
     		var tidal=document.getElementById('tidal_zone');
